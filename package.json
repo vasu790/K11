@@ -1,0 +1,7 @@
+{
+  "name": "k11-certificate-verification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student certificate verification for K11 Fitness Academy",
+  "engines": { "node": ">=18" }
+}

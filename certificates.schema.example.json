@@ -1,0 +1,10 @@
+{
+  "_comment": "Format reference only. Copy entries into certificates.json. This file is not read by the app.",
+  "entry_format": {
+    "id": "Certificate ID exactly as printed on the certificate",
+    "name": "Student's full name",
+    "course": "Course name",
+    "issued": "Issue date, e.g. 2026-03-15",
+    "status": "Valid | Revoked | Expired"
+  }
+}

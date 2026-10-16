@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Certificate Verification | K11 Fitness Academy</title>
+  <meta name="description" content="Verify the authenticity of a K11 Fitness Academy student certificate by entering its certificate ID.">
+  <meta name="theme-color" content="#df2929">
+  <meta property="og:title" content="Student Certificate Verification | K11 Fitness Academy">
+  <meta property="og:description" content="Verify the authenticity of a student certificate issued by K11 Fitness Academy.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#verify">Skip to content</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="K11 Fitness Academy home">
+      <span class="brand-mark">K11</span><span class="brand-small">FITNESS<br>ACADEMY</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav">☰</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#verify">Verify Certificate</a>
+      <a href="#how">How It Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-lines" aria-hidden="true"></div>
+      <h1>Student Certificate Verification</h1>
+      <p>Confirm the authenticity of a certificate issued by K11 Fitness Academy</p>
+    </section>
+
+    <section class="content-section" id="verify">
+      <h2>Verify a <span>Certificate</span></h2>
+      <div class="verify-shell">
+        <form class="verify-form" id="verifyForm" novalidate>
+          <label for="certId">Certificate ID</label>
+          <div class="verify-row">
+            <input id="certId" name="certId" type="text" autocomplete="off" autocapitalize="characters"
+                   spellcheck="false" maxlength="40" placeholder="Enter the ID printed on the certificate" required>
+            <button type="submit" id="verifyBtn">Verify</button>
+          </div>
+          <small class="hint">The certificate ID is printed on your certificate. Letters and numbers only; hyphens allowed.</small>
+        </form>
+        <div id="result" class="result" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="content-section" id="how">
+      <h2>How It <span>Works</span></h2>
+      <ol class="steps">
+        <li><b>Find the ID.</b> Locate the certificate ID printed on the student's certificate.</li>
+        <li><b>Enter it above.</b> We check it against the academy's official records.</li>
+        <li><b>Review the result.</b> Confirm the name, course, and issue date match the certificate in front of you.</li>
+      </ol>
+      <p class="note">If the details do not match, or an ID is not found, please contact the academy using the details below.</p>
+    </section>
+
+    <section class="content-section" id="contact">
+      <h2>Contact <span>Us</span></h2>
+      <div class="info-card" id="contactCard">
+        <div class="contact-row" data-field="address" hidden><span class="contact-icon" aria-hidden="true">⌖</span><div><b>Address</b><p></p></div></div>
+        <div class="contact-row" data-field="phone" hidden><span class="contact-icon" aria-hidden="true">☎</span><div><b>Phone</b><p><a href=""></a></p></div></div>
+        <div class="contact-row" data-field="email" hidden><span class="contact-icon" aria-hidden="true">✉</span><div><b>Email</b><p><a href=""></a></p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="/" aria-label="K11 Fitness Academy home"><span class="brand-mark">K11</span><span class="brand-small">FITNESS<br>ACADEMY</span></a>
+    <div class="socials" id="socials"></div>
+    <div class="footer-note">© <span id="year"></span> K11 Fitness Academy. All rights reserved.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
